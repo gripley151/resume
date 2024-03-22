@@ -1,0 +1,72 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: disc; /* Change the list item marker to a filled circle */
+    color: rgb(0, 0, 0); /* Set the list item text color to navy */
+    font-size: 16px; /* Set the font size for list items */
+}
+
+li {
+    margin-bottom: 5px; /* Add margin below each list item */
+}
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+
+.section-header {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section-company {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.section-role {
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.role-duties {
+    margin-top: 5px;
+    text-align: left;
+    text-indent: 20px;
+
+}
+
+.role-duties p {
+    margin: 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+/* Two-column layout */
+.two-column-bullets {
+    columns: 2;
+}
+
+.column-bullet {
+    margin-bottom: 5px;
+}
+
+.two-column-bullets {
+    column-count: 2;
+}
