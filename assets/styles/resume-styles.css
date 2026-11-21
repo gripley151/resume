@@ -3,21 +3,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: #000;
+    background: #fff;
+    line-height: 1.4;
 }
 
-ul {
-    list-style-type: disc; /* Change the list item marker to a filled circle */
-    color: rgb(0, 0, 0); /* Set the list item text color to navy */
-    font-size: 16px; /* Set the font size for list items */
+.page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
 }
-
-li {
-    margin-bottom: 5px; /* Add margin below each list item */
-}
-
 
 .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     text-align: center;
 }
@@ -26,12 +24,25 @@ li {
     font-size: 18px;
     font-style: italic;
     text-align: center;
+    margin-top: 4px;
+}
+
+.location {
+    text-align: center;
+    margin-top: 4px;
+    color: #444;
 }
 
 .section-header {
     font-size: 20px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 28px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #ccc;
+}
+
+.text {
+    margin: 10px 0 0;
 }
 
 .section-company {
@@ -42,31 +53,53 @@ li {
 .section-role {
     font-style: italic;
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
+}
+
+.role-summary {
+    margin: 0 0 6px;
 }
 
 .role-duties {
-    margin-top: 5px;
-    text-align: left;
-    text-indent: 20px;
-
+    margin: 6px 0 0;
+    padding-left: 24px;
+    list-style-type: disc;
+    font-size: 16px;
 }
 
-.role-duties p {
-    margin: 0;
-    text-align: justify;
-    text-indent: 20px;
-}
-
-/* Two-column layout */
-.two-column-bullets {
-    columns: 2;
-}
-
-.column-bullet {
+.role-duties li {
     margin-bottom: 5px;
 }
 
-.two-column-bullets {
-    column-count: 2;
+/* Technical skills */
+.skills {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 6px 16px;
+    margin: 12px 0 0;
+}
+
+.skills dt {
+    font-weight: bold;
+}
+
+.skills dd {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .skills dd {
+        margin-bottom: 8px;
+    }
+}
+
+@media print {
+    .page {
+        padding: 0;
+    }
 }

@@ -1,133 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/styles/resume-styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gregg Ripley's Resume</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/resume-styles.css">
 </head>
 <body>
+<main class="page">
+
     <div class="title">Gregg Ripley</div>
-    <div class="subtitle">Resume</div>
-<div class="section-header">Professional Summary</div>
+    <div class="subtitle">Manager, Technology &middot; Automation, Observability &amp; Systems Integration</div>
+    <div class="location">Meridian, ID</div>
 
-<div class="text">Highly skilled and mature software development professional bringing more than 16 years in software design, development and integration.  Advanced knowledge of application development utilizing the .NET Framework including extensive software and hardware testing.  Knowledgeable of cloud-based solution designs, development, and automation. Successful leadership experience with more than 8 years of leading engineering teams.  Collaborative, personable and adaptable team member with unique analysis skills to create positive solutions.  Always desiring to learn new technologies to find the best way to solve problems.</div>
+    <div class="section-header">Professional Summary</div>
+    <p class="text">Results-driven Lead Software Engineer and team lead with 20+ years of experience architecting scalable, secure automation and observability solutions for complex enterprise environments. Currently the lead architect of an enterprise monitoring platform built on PowerShell services and a .NET 8 Blazor WebAssembly application, delivering unified OpenTelemetry-based observability across 460+ automated checks in 22 production environments. Deep expertise in C#, PowerShell, and T-SQL with cloud-native design on Azure, CI/CD automation, and hands-on use of AI coding agents (Claude, GitHub Copilot) to accelerate delivery across large codebases.</p>
 
-<div class="section-header">Experience & Skills Highlights</div>
-<div class="two-column-bullets">
-<ul>
-<div class="column-bullet"><li>Effective as a 1 - 1 mentor and team building leader</li></div>
-<div class="column-bullet"><li>NET Framework, NET Core and NET Standard</li></div>
-<div class="column-bullet"><li>DevOps, Terraform, Azure, AWS, Docker, Kubernetes, Serverless Architecture</li></div>
-<div class="column-bullet"><li>C#, C++, JavaScript, Python, Obj-C</li></div>
-<div class="column-bullet"><li>ASP.NET - MVC, REST APIs, SOAP, Bootstrap, jQuery, JSON, XML, YAML, VUE</li> </div>
-<div class="column-bullet"><li>Automation (CI/CD) – Azure DevOps, Selenium, Ansible, Jenkins, GOCD.</li></div>
-<div class="column-bullet"><li>SQL, Azure SQL, Snowflake, Vertica</li></div>
-<div class="column-bullet"><li>Crystal Reports, SSRS, SSIS</li></div>
-<div class="column-bullet"><li>Microservices, Kubernetes, Messaging (Rabbit MQ / Azure)</li></div>
-<div class="column-bullet"><li>Web-based software engineering, Fiddler, Postman</li></div>
-<div class="column-bullet"><li>SDLC engineering standards</li> </div>
-<div class="column-bullet"><li>SVN, GIT, Bitbucket, Cruise Control, Jenkins</li></div>
-<div class="column-bullet"><li>Systems integrator (see work history)</li></div>
-<div class="column-bullet"><li>Architect and design documentation (UML)</li></div>
-<div class="column-bullet"><li>Agile methodologies (Scrum and Kanban)</li></div>
-<div class="column-bullet"><li>Unit testing including TDD & BDD (XUnit, NUnit, Rhino Mock, SpecFlow)</li></div>
-<div class="column-bullet"><li>Code review processes (CodeLens)</li></div>
-<div class="column-bullet"><li>GUIs - Web UIs, WinForms, WPF, IOS</li></div>
-<div class="column-bullet"><li>Epicor ERP Platform</li></div>
-<div class="column-bullet"><li>Office 365 and Azure user administration</li></div>
-<div class="column-bullet"><li>Azure PowerApps</li></div>
-<div class="column-bullet"><li>Application, Web-based, and hardware device software testing (see certifications)</li></div>
-</ul>
-</div>
+    <div class="section-header">Professional Experience</div>
 
-<div class="section-header">Work History</div>
+    <div class="section-company">ADVANTAGE SOLUTIONS (ADV) &mdash; REMOTE</div>
+    <div class="section-role">Manager, Technology (07/2022 to present)</div>
+    <p class="role-summary">Lead architect and primary developer of &ldquo;Horizon Watch,&rdquo; an enterprise job-monitoring and observability platform.</p>
+    <ul class="role-duties">
+        <li>Architected and lead development of Horizon Watch, a four-application platform (~100K lines of PowerShell and .NET) that continuously validates 460+ job and report checks across 22 production environments and streams OpenTelemetry results to Coralogix.</li>
+        <li>Built a .NET 8 Blazor WebAssembly application (Clean/Onion architecture, MudBlazor, FluentValidation) over Azure Table Storage for authoring monitoring configurations, complemented by PowerShell services for distributed test execution, entity synchronization, and scheduled orchestration.</li>
+        <li>Delivered broad monitoring coverage &mdash; SQL Server Agent/SSIS jobs, Power BI dataset refreshes, Databricks jobs and Delta Live Tables pipelines, SFTP, Azure Blob, ODBC, and HTTP/DOM synthetic checks &mdash; on a 5-minute continuous cadence with state-change detection to bound log volume.</li>
+        <li>Engineered Coralogix-to-ServiceNow alert routing with normalized severity mapping to automate context-rich incident ticketing for failed and at-risk jobs.</li>
+        <li>Strengthened security with a defense-in-depth read-only SQL validator enforced at the authoring, sync, and runtime layers, and migrated credential storage from per-user DPAPI to certificate-based CMS encryption.</li>
+        <li>Established a three-slot (Stage/Dev/Prod) deployment model with atomic swaps, automated rollback archives, and a change-approval hold-period gate, backed by hundreds of automated tests (xUnit, Playwright end-to-end, PowerShell regression, and golden-standard integration tests).</li>
+        <li>Lead and mentor a small engineering team, authoring roughly two-thirds of platform commits while owning architecture standards, code review, and CI/CD on Azure DevOps.</li>
+    </ul>
 
-<div class="section-company">ADVANTAGE SOLUTIONS (ADV) / ATLAS (ATLASDSR.COM), IRVINE CA (REMOTE)</div>
-<div class="section-role">Lead Software Engineer (07/2022 to present)</div>
-<div class="role-duties"><li>Manage a team of software engineers responsible for several ETL merchants producing hundreds of daily reporting datasets. Activities include mentoring, coaching, and enablement.</li></div>
-<div class="role-duties"><li>Responsible for the monitoring and validation of core data ETL processes.</li></div>
-<div class="role-duties"><li>Conduct daily scrum meetings, monitor, and report on performance and salary adjustments.</li></div>
-<div class="role-duties"><li>Architected and designed new portal report automation for new customers. Reported status on a regular bi-weekly cadence with stakeholders using plain language for both technical and non-technical audience.</li></div>
-<div class="role-duties"><li>Actively involved with cross disciplinary activities with project and product teams leading activities which include estimating, problem solving, designing, and mentoring.</li></div>
+    <div class="section-company">ST. LUKE&rsquo;S HEALTH PARTNERS &mdash; BOISE, ID</div>
+    <div class="section-role">Software Engineer / DevOps (07/2018 to 07/2022)</div>
+    <ul class="role-duties">
+        <li>Designed and deployed a high-performance ETL pipeline with automated data validation, transformation, and API integration, processing 1M+ records daily.</li>
+        <li>Spearheaded a BDD-based testing framework using .NET SpecFlow and Azure DevOps, improving test coverage by 25%.</li>
+        <li>Enhanced system observability with proactive monitoring via Azure Monitor and AI-driven log analysis, reducing downtime by 15%.</li>
+        <li>Automated infrastructure provisioning using Terraform and Kubernetes, optimizing resource utilization across Azure cloud environments.</li>
+    </ul>
 
-<div class="section-company">ST. LUKES HEALTH PARTNERS, BOISE ID</div>
-<div class="section-role">Software Engineer / DevOps (07/2018 to 07/2022)</div>
-<div class="role-duties"><li>Architected and designed a comprehensive data moving pipeline including features such as file validation, transformations, custom delivery APIs in a PHI secure environment and full reporting infrastructure (Azure Functions & .NET standard libraries & MFA security).</li></div>
-<div class="role-duties"><li>Led team to develop novel testing framework leveraging BDD concepts to encourage communication between stake holders and developers. The process included integration with Azure DevOps and part of our CD/CI efforts.</li></div>
-<div class="role-duties"><li>Developed and released a fully containerized Kubernetes solution for a data ingestion process integral to the business’ data source requirements gaining a solid understanding of container development (Docker & Azure K8s).</li></div>
-<div class="role-duties"><li>Researched and identified modern technologies leveraging cloud-based solutions and continuous integration and deployment for a cloud-based infrastructure (IaaS & Terraform).</li></div>
-<div class="role-duties"><li>Managed Azure and AD accounts and licensing along with Office 365 users and products.</li></div>
-<div class="role-duties"><li>Wrote and updated easy to understand documentation for technologies that are the core to our business model.</li></div>
-<div class="role-duties"><li>Executed company policies, technical procedures, and standards for preserving confidential data (PHI).</li></div>
-<div class="role-duties"><li>Worked closely with Security Operations (SecOps) ensuring existing code base and designs meet and exceed security initiatives.</li></div>
-<div class="role-duties"><li>Managed security systems, network monitoring and automation of server monitoring for a cloud based IAAS and managed PAAS resources in Azure.</li></div>
+    <div class="section-company">APPAREO SYSTEMS &mdash; FARGO, ND</div>
+    <div class="section-role">Senior Software Engineer / Team Lead (02/2017 to 07/2018)</div>
+    <ul class="role-duties">
+        <li>Led the design of a custom RFE system integrating three platforms with ASP.NET Core and SQL Server, improving system interoperability.</li>
+        <li>Developed an ESD compliance process integrated with Epicor ERP, ensuring adherence to ISO 9001:2015 and AS9100D standards.</li>
+        <li>Built a statistical process-control tool using .NET and Factory Logix data, enabling real-time quality assurance for manufacturing processes.</li>
+        <li>Delivered an automated HR payroll application consolidating data from multiple systems to streamline operations.</li>
+        <li>Automated resource tracking by integrating Jira with Power BI, providing real-time project visibility for stakeholders.</li>
+    </ul>
 
-<div class="section-company">APPAREO SYSTEMS, FARGO ND</div>
-<div class="section-role">Senior Software Engineer / Team Lead (02/2017 to 07/2018)</div>
-<div class="role-duties"><li>Built and maintained customer service tools supporting the company's current products.</li></div>
-<div class="role-duties"><li>Lead a team responsible for the architecture and development of a new RFE (Request for Expenditure) process for the company (ASP.NET UI with SQL backend).</li></div>
-<div class="role-duties"><li>Worked closely with the Internal Tools team to support and customize the business Epicor ERP system resulting in substantial user time savings. Efforts included dynamic report generation leveraging MS Excel and SSRS.</li></div>
-<div class="role-duties"><li>Leveraged Epicor ERP integration points for the purpose of extending user abilities and reporting requirements. </li> </div>
-<div class="role-duties"><li>Created a unique custom process in Epicor ERP by which employees were required to pass ESD (Electro-Static Discharge) prior to working shifts.</li></div>
-<div class="role-duties"><li>Created a Manufacturing statistical process control tool integrating Aegis Factory Logix database and creating a custom solution exceeding expectations and satisfying ISO 9001:2015 and AS9100D certifications (Customized .NET WinForms and MVC ADO.NET).</li></div>
-<div class="role-duties"><li>Leveraged the Aegis Factory Logix manufacturing software’s data warehouse to identify and extract real-time hardware testing metrics for the purpose of real-time fault monitoring of products exiting the solder line and prior to system testing.</li></div>
-<div class="role-duties"><li>Created a fully featured HR payroll application integrating multiple data sources reducing HR workload and improving accuracy (Customized .NET WinForms with Active Directory, Jira, and Epicor integration).</li></div>
-<div class="role-duties"><li>Created and maintained a comprehensive .NET integration library for various internal and external systems including JIRA, Epicor, Active Directory, and web services (.NET Library).</li></div>
-<div class="role-duties"><li>Integrated JIRA into MS Project and Power BI for a pivotal synchronization process for the company's project management group.</li></div>
+    <div class="section-role">Software Engineer / Test Team Lead (03/2012 to 02/2017)</div>
+    <ul class="role-duties">
+        <li>Engineered a test-data capture framework for manufacturing QA, improving defect detection by 20%.</li>
+        <li>Developed a web-based MVC lab-scheduling application with Crystal Reports, enhancing resource-allocation efficiency.</li>
+        <li>Designed a robotic test platform for iOS UI testing, reducing manual testing effort by 40%.</li>
+        <li>Built a GPS simulation interface for agricultural systems, leveraging a multi-platform architecture to support precision farming.</li>
+    </ul>
 
-<div class="section-role">Software Engineer / Test Team Lead (03/2012 to 02/2017)</div>
-<div class="role-duties"><li>Designed and developed several tools and platforms including: a web-based MVC ADO.NET lab scheduling application and reporting system, a generic test data capturing framework and reporting system for company's manufacturing final testing, an automated robotic testing platform for IOS tablets, internal testing framework for both automation and hardware interfaces, develop numerous MS Window services (ASP.NET and Bootstrap JS, Windows Service, Automation Service).</li></div>
-<div class="role-duties"><li>Designed testing framework interfacing multiple systems (x86 / ARM) using messaging-based networking, created custom NMEA GPS simulator and custom software validation testing engine.</li></div>
-<div class="role-duties"><li>Created an AOI system leveraging OpenCV and Canon Rebel camera on the manufacturing pick and place assembly line.</li></div>
-<div class="role-duties"><li>Utilized Microsoft Windows Presentation Foundation (WPF), Windows Forms, REST and WCF SOA from UI to back-end, MySQL and MS SQL Databases, Python scripting, Windows and Linux environments, and Crystal Reports.  Many of the projects included using C++ and cross system architectures (x86 / ARM).</li></div>
-<div class="role-duties"><li>Mentored and developed a team of electrical and software engineers (they became great .NET programmers).</li></div>
+    <div class="section-header">Additional Experience</div>
+    <ul class="role-duties">
+        <li><strong>Feed Management Systems (Cargill)</strong> &mdash; Fargo, ND &middot; Software Engineer (11/2010 to 03/2012): Developed data-processing solutions for agricultural systems.</li>
+        <li><strong>Appareo Systems</strong> &mdash; Fargo, ND &middot; Software Engineer (03/2009 to 11/2010): Built an electronic flight bag touch-screen application and an agricultural cloud portal.</li>
+        <li><strong>Cooper&rsquo;s Tech Group</strong> &mdash; Fergus Falls, MN &middot; Computer and Network Technician (04/2003 to 03/2009): Contributed to software development and system-integration projects.</li>
+        <li><strong>Microsoft Business Solutions</strong> &mdash; Fargo, ND &middot; Software Developer (06/2001 to 04/2003): Supported enterprise software solutions and integrations.</li>
+    </ul>
 
-<div class="section-company">FEED MANAGEMENT SYSTEMS (CARGILL), FARGO ND</div>
-<div class="section-role">Software Engineer (11/2010 to 3/2012)</div>
-<div class="role-duties"><li>Wrote maintainable and extensible code within a team of requirement and solution engineers.</li></div>
-<div class="role-duties"><li>Worked in a .NET WinForms environment leveraging Telerik controls.</li></div>
-<div class="role-duties"><li>Worked closely with requirements engineers, QA testing engineers, and document engineers.</li></div>
-<div class="role-duties"><li>Won the first ever Fed-Ex employee award for building and demonstrating business value adding concepts to existing product line.</li></div>
+    <div class="section-header">Technical Skills</div>
+    <dl class="skills">
+        <dt>Languages &amp; Frameworks</dt>
+        <dd>C#, .NET 8 / .NET Core, ASP.NET, Blazor WebAssembly, MVC, WinForms, PowerShell 5.1/7, Python, T-SQL, JavaScript, C++</dd>
+        <dt>Cloud &amp; DevOps</dt>
+        <dd>Azure (PaaS / IaaS / SaaS), Azure Table Storage, Azure DevOps, CI/CD, Docker, Kubernetes, Terraform, Git, Windows Task Scheduler</dd>
+        <dt>Observability &amp; Data</dt>
+        <dd>OpenTelemetry, Coralogix, ServiceNow, Power BI, Databricks, SSIS, DuckDB, ODBC, Datadog, JSON / XML</dd>
+        <dt>Testing &amp; Quality</dt>
+        <dd>xUnit, Playwright, FluentValidation, BDD / SpecFlow, integration &amp; regression test automation</dd>
+        <dt>Architecture &amp; Practices</dt>
+        <dd>Clean / Onion Architecture, systems integration, secure credential management, Agile / Scrum, AI-assisted development (Claude, GitHub Copilot)</dd>
+    </dl>
 
-<div class="section-company">APPAREO SYSTEMS, FARGO ND</div>
-<div class="section-role">Software Engineer (03/2009 to 11/2010)</div>
-<div class="role-duties"><li>Worked on a team developing an electronic flight bag (EFB) touch screen application for two major global helicopter companies.</li></div>
-<div class="role-duties"><li>Worked on a cloud portal for agricultural management systems (.NET WPF full-stack with MySQL backend and custom compiled JS cloud portal full-stack).</li></div>
+    <div class="section-header">Education &amp; Certifications</div>
+    <div class="section-company">B.S., COMPUTER INFORMATION SYSTEMS &mdash; SUMMA CUM LAUDE, GPA 3.88</div>
+    <div class="section-role">Minnesota State University Moorhead &mdash; Moorhead, MN</div>
+    <ul class="role-duties">
+        <li>Machine Learning &mdash; Coursera (Prof. Andrew Ng)</li>
+        <li>ISTQB / ASTQB Foundation Level (CTFL), Software Testing</li>
+    </ul>
 
-<div class="section-company">COOPER’S TECH GROUP, FERGUS FALLS MN</div>
-<div class="section-role">Computer and Network Technician (04/2003 to 03/2009)</div>
-<div class="role-duties"><li>Provided ongoing support with customers resolving questions and problems relating to personal computers and networks.</li></div>
-<div class="role-duties"><li>Install new computer hardware and networking solutions.</li> </div>
-<div class="role-duties"><li>Install and update software applications including server applications and services.</li></div>
-<div class="role-duties"><li>Supported a variety of business domains including accounting, medical, and manufacturing.</li></div>
-<div class="role-duties"><li>Gained working knowledge of HIPAA regulations and data integrity requirements.</li></div>
-<div class="role-duties"><li>Gained life-long deep networking experience that has enhanced my overall career in many ways.</li></div>
+    <div class="section-header">Volunteering</div>
+    <ul class="role-duties">
+        <li>Boise Rescue Mission</li>
+        <li>Boise Food Bank</li>
+        <li>Deacon responsibilities at church</li>
+    </ul>
 
-<div class="section-company">MICROSOFT BUSINESS SOLUTIONS, FARGO ND</div>
-<div class="section-role">Software Developer (06/2001 to 04/2003)</div>
-<div class="role-duties"><li>Worked closely within a development team gathering and implementing software requirements and designs by architects and customers while creating software document artifacts.</li></div>
-<div class="role-duties"><li>Created scripts for test automation and automatically generated reports involving networking and distributive computing.</li></div>
-
-<div class="section-header">Education</div>
-
-<div class="section-company">BACHELOR OF SCIENCE | 2002 | MINNESOTA STATE UNIVERSITY MOORHEAD (MSUM) - MN</div>
-<div class="role-duties">Major: Computer Information Systems</div>
-<div class="section-role">Honors: </div>
-<div class="role-duties"><li>Graduated Summa Cum Laude with GPA 3.88</li></div>
-<div class="role-duties"><li>American Scholar Award.  February 2001 - Sponsor Dr. Dan Brekke</li></div>
-
-<div class="section-header">Certifications & Other Learning</div>
-
-<div class="role-duties"><li>ISTQB / ASTQB Foundation Level (CTFL) - Software testing certification (2015)</li></div>
-<div class="role-duties"><li>Machine Learning Course – Coursera – Professor Andrew Ng</li></div>
-<div class="role-duties"><li>Full-Stack development courses including React, Vue, and .NET Blazor technologies</li></div>
-
-<div class="section-header">Volunteering</div>
-
-<div class="role-duties"><li>Boise Rescue Mission</li></div>
-<div class="role-duties"><li>Boise Food Bank</li></div>
-<div class="role-duties"><li>Deacon responsibilities at church</li></div>
-
+</main>
 </body>
 </html>
